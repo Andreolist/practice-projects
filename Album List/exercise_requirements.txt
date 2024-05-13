@@ -1,0 +1,9 @@
+For this exercise you need to create an Album list like the one in the image. You should write two constructor functions. The first one is MusicAlbum with the following properties (name, artist, artistImage, songs, yearReleased, albumCover, albumDuration) and two methods (addSong) to add the songs to your album and the second method (listAllSongs) to display all songs on the screen just like in the image.
+
+The second constructor function is Song with the following properties (title, artist, plays, duration).
+
+After that create the Album and create a couple of Songs. Add the Songs to the Album and list all songs on the screen.
+
+Use the image from the Spotify album as a reference for the structure, but keep in mind that you can use an album and an artist of your choice if you like.
+
+Bonus(but not required): Style the HTML just like in the image.

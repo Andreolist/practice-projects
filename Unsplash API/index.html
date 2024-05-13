@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Unsplash - API</title>
+
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <!-- header -->
+
+    <header id="header">
+      <!-- logo -->
+      <a href="https://unsplash.com/" target="_blank"><img id="logo" src="./img/unsplash.png" alt="unsplash-logo"></a>
+      
+      <div id="header-div">
+        <h1 id="header-h1">Life journey. Frame by frame</h1>
+        <form>
+          <input type="text" name="search" id="search" placeholder="Search photos" autocomplete="off">
+          <button id="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- main -->
+
+    <main id="main">
+      
+      <div>
+        <div id="query-title"></div>
+        <div id="image-results"></div>
+      </div>
+
+      <div id="random_title">
+        <h2>Recent Photos</h2>
+      </div>
+
+      <div id="the_photos">
+        <div id="random_photos"></div>
+      </div>
+      
+    </main>
+
+
+  </div>
+
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>

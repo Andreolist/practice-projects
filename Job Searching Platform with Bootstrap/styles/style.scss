@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif
+}
+
+main {
+  background-color: #f8f9fa;
+}
+
+
+#hero {
+  height: 100vh;
+  background-image: url(../img/business.jpg);
+  object-fit: cover;
+  background-size: cover;
+
+}
+
+#hero-text {
+  background-color: rgba(255, 255, 255, 0.315);
+}
+
+
+.card {
+  font-size: 1rem;
+  box-shadow: 5px 10px 15px 2px rgb(163, 163, 163);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+#dropdown1 {
+  margin-left: -90px;
+}
+
+.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInRightBig {
+  --animate-duration: 2s;
+}
+
+#user {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+#our-story {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1;
+}
+
+#pages {
+  transform: rotate(-90deg);
+}
+
+#main-text {
+  transform: rotate(90deg);
+}
+
+.col-9 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.nav-link {
+  color: var(--bs-tertiary);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--bs-light);
+  background-color: var(--bs-emphasis-color);
+}
+
+.vertical-line {
+  border-left: 1px solid grey;
+  height: 100%;
+}
+
+#open {
+  color: green;
+}
+
+nav a:active,
+nav a:hover {
+  color: black !important;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: transparent;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.537);
+  color: #fff;
+}
+
+#career-card .card {
+  box-shadow: none;
+}
+
+.page-link {
+  color: grey;
+}
+
+#partners {
+  background-image: url("../img/3329357.jpg");
+}
+
+#logout {
+  // transform: rotate(90deg);
+  width: 1px;
+  height: 250px;
+  background-color: white;
+  align-self: center;
+}
+
+#welcome {
+  background-image: url(../img/blur\ welcome.jpg);
+  background-size: cover;
+}
+
+#login {
+  // background-color: rgba(14, 17, 30, 0.735);
+  background-color: rgba(33, 41, 69, 0.68);
+  color: white;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.naslov h1 {
+  color: white;
+  font-size: 4rem;
+  width: 15ch;
+}
+
+.naslov h3 {
+  color: white;
+}

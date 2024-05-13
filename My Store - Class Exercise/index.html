@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our first ever e-shop</title>
+
+    <style>
+      #products {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      #products li {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .product-img {
+        width: 100px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section data-section="first-section">
+      <h2>Shopping Cart</h2>
+      <ol id="shopping-cart"></ol>
+    </section>
+
+    <section>
+      <h2>My Store</h2>
+      <div>
+        <ul id="products"></ul>
+      </div>
+    </section>
+
+    <section>
+      <div id="compare"></div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

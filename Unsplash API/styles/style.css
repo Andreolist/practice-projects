@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0 auto;
+  
+
+}
+
+* {
+  box-sizing: inherit;
+  font-family: sans-serif;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  text-align: center;
+  
+
+
+}
+
+#header-h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight:200;
+  font-family: "Lobster", sans-serif;
+}
+
+#header input, #header button {
+  font-size:1.2rem;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  border-radius: 10px;
+
+}
+
+#header div {
+  background-color: rgba(92, 89, 89, 0.185);
+  padding: 50px;
+  border-radius: 20px;
+  border: 2px solid rgba(101, 100, 100, 0.333);
+}
+
+
+#header input {
+  width: 600px;
+}
+
+#header button {
+  background-color: rgb(57, 119, 119);
+  color: #efefef;
+  cursor: pointer;
+}
+
+#header button:hover {
+  background-color: rgb(109, 163, 163);
+}
+
+#logo {
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+main {
+  padding: 10px;
+  background-color: #1c1c1c;
+}
+
+
+#random_photos, #image-results {
+  columns: 4;
+  gap: 5px;
+}
+
+
+.random-div-container {
+  width:100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.random-title {
+  display: none;
+}
+
+#random_title h2 {
+  color: #efefef;
+  font-size: 1.5rem;
+}
+
+.api-img {
+  width: 100%;
+}
+
+.api-img:hover{
+  cursor: pointer;
+  border: 3px solid rgba(217, 214, 214, 0.916);
+  box-shadow: 5px 5px 5px black;
+  transform: scale(1.1);
+  transition: transform 0.4s linear;
+
+}
+
+
+
+#query {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #efefef;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(76, 76, 76, 0.534);
+  z-index: 9999;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  height:500px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+
+}
+
+.popupImage {
+  position:inherit;
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.x {
+  position: fixed;
+  top: 15%;
+  right: 15%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 55px;
+  border: none;
+  background-color: rgb(234, 234, 234);
+}
+
+.x:hover {
+  color: white;
+  background-color: rgb(164, 36, 36);
+  border: none;
+
+}
+
+
+.text {
+  position: fixed;
+  top: 25%;
+  right: 25%;
+  width: 30ch;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: #353535;
+
+}
+
+
+.heart {
+  position: fixed;
+  top: 45%;
+  right: 25%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 30ch;
+  border: none;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.26);
+  padding: 4px 100px;
+  cursor: pointer;
+  background-color:transparent;
+  border-radius: 5px;
+}
+
+.heart:active, .download:active {
+  /* box-shadow: 1px 8px 13px black; */
+  box-shadow: none;
+}
+
+.download {
+  position: fixed;
+  top: 55%;
+  right: 25%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 30ch;
+  border: none;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.26);
+  padding: 4px 100px;
+  cursor: pointer;
+  background-color:transparent;
+  border-radius: 5px;
+  color: black
+}
+

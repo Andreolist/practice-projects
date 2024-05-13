@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">CareerQuest</a>
+        <!-- hamburger menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-tabs me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jobpost.html">Post a Job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="companies.html">Companies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="advice.html">Career Advice</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-4">
+            <i class="bi bi-envelope"></i>
+            <i class="bi bi-bell"></i>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./img/portrait.jpg" id="user" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu p-2" id="dropdown1">
+                  <li><div class="d-flex align-items-center"><i class="bi bi-person"></i><a class="dropdown-item" href="profile.html">Profile</a></div></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-bookmark"></i><a class="dropdown-item" href="#">Saved Ads</a></div></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-sliders2"></i><a class="dropdown-item" href="#">Settings</a></div></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-lock"></i><a class="dropdown-item" href="#">Privacy</a></div></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-bell"></i><a class="dropdown-item" href="#">Notifications</a></div></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-question-circle"></i><a class="dropdown-item" href="#">Help</a></div></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-shield"></i><a class="dropdown-item" href="#">Privacy Policy</a></div></li>
+                  <li><div class="d-flex align-items-center"><i class="bi bi-box-arrow-right"></i><a class="dropdown-item" href="logout.html">Log Out</a></div></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main class="container-xxl-fluid overflow-hidden">
+
+  <!-- hero section -->
+
+  <div class="container-xxl-fluid d-flex flex-column justify-content-center align-items-center" id="hero">
+
+    <div class="row">
+      <div class="col-12 text-center p-5" id="hero-text">
+        <h1 class="animate__animated animate__fadeInLeftBig">Unlock Opportunities, Unleash Potential</h1>
+        <h3 class="animate__animated animate__fadeInRightBig">Job Search. Simplified</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- trusted partner / companies -->
+
+  <div class="container mb-5 mt-5">
+    <div class="row text-center" >
+      <div class="col-12 mb-4">
+        <h3>Trusted partner for <span class="h1 fw-bold">1000+</span> companies</h3>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center justify-items-between text-center" id="companies">
+      <div class="col-2"><img class="img-fluid" src="./img/google.png"></div>
+      <div class="col-2"><img class="img-fluid" src="./img/appfolio.png"></div>
+      <div class="col-2"><img class="img-fluid" src="./img/hype.png"></div>
+      <div class="col-2"><img class="img-fluid" src="./img/network-marketing.png"></div>
+      <div class="col-2"><img class="img-fluid" src="./img/vivo.png"></div>
+      <div class="col-2"><img class="img-fluid" src="./img/bajaj.png"></div>
+    </div>
+  </div>
+
+  <!-- award -->
+
+  <div class="container-fluid bg-dark d-flex align-items-center justify-content-center text-light">
+    <img src="./img/first-place.png" class="w-25">
+    <div>
+      <h3 id="award-banner">Winner of Innovative Recruitment Strategies Award</h3>
+      <h5>Management Consulting Awards 2024 <br> hosted by Wealth & Finance International</h5>
+    </div>
+  </div>
+
+  <!-- dropdowns -->
+
+    <div class=" container">
+      <!-- dropdowns -->
+      <p class="h3 text-center mt-5">Explore over 1,000 available positions</p>
+      <div class="mt-3 mb-4 p-4">
+      <div class="row text-center">
+        <div class="col-3 ">
+          <select class="form-select rounded-0" aria-label="Default select example">
+            <option selected>Industry</option>
+            <option value="1">IT</option>
+            <option value="2">Management</option>
+            <option value="3">HR</option>
+            <option value="4">Automobile</option>
+            <option value="5">Marketing</option>
+            <option value="6">Architecture</option>
+            <option value="7">Education</option>
+            <option value="8">Transport</option>
+            <option value="9">Agriculture</option>
+            <option value="10">Hospitality</option>
+            <option value="11">Sales</option>
+            <option value="12">Law</option>
+            <option value="13">Economics</option>
+            <option value="14">Food Industry</option>
+            <option value="15">Accounting</option>
+            <option value="16">Health</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <select class="form-select rounded-0" aria-label="Default select example">
+            <option selected>Location</option>
+            <option value="1">Skopje</option>
+            <option value="2">Bitola</option>
+            <option value="3">Ohrid</option>
+            <option value="4">Struga</option>
+            <option value="5">Dojran</option>
+            <option value="6">Tetovo</option>
+            <option value="7">Gevgelija</option>
+            <option value="8">Dojran</option>
+            <option value="9">Bogdanci</option>
+            <option value="10">Shtip</option>
+            <option value="11">Kochani</option>
+            <option value="12">Hybrid</option>
+            <option value="13">Remote</option>
+            <option value="14">On-site</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <select class="form-select rounded-0" aria-label="Default select example">
+            <option selected>Experience</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
+            <option value="6">Junior</option>
+            <option value="6">Intermidiate</option>
+            <option value="7">Senior</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-dark rounded-0 w-100">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ads grid -->
+
+  <div class="container">
+
+    <h3 class="mt-4 mb-4">Featured jobs</h3>
+
+    <div class="row">
+
+      <div class="col-10">
+
+
+        <!-- row 1 -->
+
+        <div class="row">
+
+          <!-- ad 1-->
+          <div class="col-6">
+
+            <div class="card d-flex h-100">
+
+              <div class="row p-4">
+                <div class="col-6">
+                  <img src="./img/network-marketing.png">
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Marketing Manager</h5>
+                <p class="card-text"><strong>Role: </strong>Lead strategies, drive growth, and optimize ROI. <br> <strong>Requirements:</strong> Bachelor's degree, leadership skills, and marketing experience required. Competitive salary, collaborative culture. </p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>Remote</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>3+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal2">Quick Apply</a>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ">
+                  <img src="./img/network-marketing.png">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container p-4">
+                  <strong>
+                    <p>About Network Marketing Software</p>
+                  </strong>
+                  <p>ABC Network Management Software is a pioneering tech firm specializing in cutting-edge solutions for efficient network administration. With our innovative suite of software tools, we empower businesses to streamline network operations, enhance security, and optimize performance. Our user-friendly interfaces and advanced analytics provide comprehensive insights, enabling clients to proactively manage and troubleshoot their networks with ease. Backed by a team of skilled engineers and relentless dedication to excellence, we are committed to delivering unparalleled solutions that drive success in today's interconnected world.</p>
+                </div>
+                <div class="modal-body">
+
+                  <h5><strong>Position:Marketing Manager</strong></h5>
+                  
+                  <ul>
+                    <p><strong>Responsibilities:</strong></p>
+                    <li>Develop and implement strategic marketing plans to achieve company objectives.</li>
+                    <li>Oversee all aspects of marketing campaigns, including planning, execution, and performance tracking.</li>
+                    <li>Conduct market research to identify opportunities and trends, and analyze competitors.</li>
+                    <li>Manage and optimize marketing budgets to maximize ROI.</li>
+                    <li>Lead a team of marketing professionals, providing guidance, support, and performance feedback.</li>
+                    <li>Collaborate with cross-functional teams, including sales, product development, and customer service, to ensure alignment and integration of marketing efforts.</li>
+                  </ul>
+
+                  <ul>
+                    <p><strong>Requirements</strong></p>
+                    <li>Bachelor's degree in marketing, business administration, or related field; MBA preferred.</li>
+                    <li>Proven experience in marketing management roles, with a track record of successful campaign execution and team leadership.</li>
+                    <li>Strong analytical skills and ability to interpret data to drive decision-making.</li>
+                    <li>Excellent communication and interpersonal skills.</li>
+                    <li>Creative thinking and problem-solving abilities.</li>
+                    <li>Proficiency in marketing software and tools.</li>
+                    <li>Ability to thrive in a fast-paced, dynamic environment.</li>
+                  </ul>
+
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body d-flex flex-column gap-4">
+                  <div class="d-flex flex-column">
+                    <label for="name">First Name</label>
+                    <input type="text" placeholder="Jaden" id="name" disabled>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label for="surname">Last Name</label>
+                    <input type="text" placeholder="Smith" id="surname" disabled>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label for="email">Email Address</label>
+                    <input type="text" placeholder="j.smith@gmail.com" id="email" disabled>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label for="resume">Resume</label>
+                    <input type="text" placeholder="Jaden Smith.pdf" id="resume" disabled>
+                  </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary rounded-0">Edit Info</button>
+                  <button type="button" class="btn btn-dark rounded-0" data-bs-toggle="modal" data-bs-target="#toast">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- toast -->
+            <div class="modal fade" id="toast" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body d-flex flex-row gap-2 align-items-center">
+                    <i class="bi bi-check h3"></i>
+                    <h6>Your application has been submitted successfully</h6>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+
+          <!-- ad 2-->
+          <div class="col-6">
+
+            
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/google.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Senior Programmer</h5>
+                <p class="card-text"><strong>Role: </strong>Lead development projects, mentor junior team members<br> <strong>Requirements:</strong> Bachelor's degree proficiency in specific technologies, strong problem-solving skills. </p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>On-site</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>5+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- END OF ROW 1 -->
+
+        <div class="row mt-4 mb-4">
+          <!-- ad 3 -->
+          <div class="col-6">
+
+            
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/google.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Software Engineer</h5>
+                <p class="card-text"><strong>Role: </strong>Develop and maintain software applications, systems, and tools to drive innovation and improve user experiences.<br> <strong>Requirements:</strong> Bachelor's degree proficiency in specific technologies, strong problem-solving skills. </p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>On-site</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>5+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- ad 4-->
+          <div class="col-6">
+
+  
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/vivo.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Data Analyst</h5>
+                <p class="card-text"><strong>Role: </strong>Analyze data, extract insights, and provide actionable recommendations.<br> <strong>Requirements:</strong> Bachelor's degree, proficiency in data analysis tools, strong analytical skills.  </p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>Hybrid</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>3+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row mt-4 mb-4">
+
+          <!-- ad 5-->
+          <div class="col-6">
+
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/appfolio.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">HR Manager</h5>
+                <p class="card-text"><strong>Role: </strong> Lead recruitment, employee relations, and HR initiatives.<br> <strong>Requirements:</strong> Bachelor's degree, strong communication skills, and knowledge of employment laws.   </p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>On-site</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>2+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ad 6 -->
+          <div class="col-6">
+
+            
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/appfolio.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Content creator</h5>
+                <p class="card-text"><strong>Role: </strong> Craft engaging content, including articles, social media posts, and videos. <br> <strong>Requirements:</strong> Strong writing skills, creativity, proficiency in multimedia tools.</p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Part-time</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>Remote</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>1+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- END OF ROW 2 -->
+
+        <!-- row 3 -->
+        <div class="row">
+
+          <!-- ad 7-->
+          <div class="col-6">
+
+            
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/network-marketing.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Operations Coordinator</h5>
+                <p class="card-text"><strong>Role: </strong> Coordinate daily operations, manage schedules, and support team collaboration. <br> <strong>Requirements:</strong> Excellent organizational skills, strong communication abilities, and attention to detail.</p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>On-site</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>3+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- ad 8-->
+          <div class="col-6">
+
+            
+            <div class="card d-flex h-100">
+
+              <div class="row p-4 ">
+                <div class="col-6 ">
+                  <img src="./img/network-marketing.png"></div>
+                <div class="col-6 d-flex justify-content-end">
+                  <i class="bi bi-bookmark h3" type="button" id="bookmark"></i>
+                </div>
+              </div>
+
+              <div class="row card-body">
+                <h5 class="card-title">Product Manager</h5>
+                <p class="card-text"><strong>Role: </strong> Drive product development, define roadmap, and optimize user experiences.  <br> <strong>Requirements:</strong> Bachelor's degree, strong analytical skills, and excellent communication.</p>
+              </div>
+
+              <div class="row small">
+                <div class="col-12 d-flex justify-content-around">
+                  <div class=""><i class="d-block bi bi-clock text-center"></i>Fulltime</div>
+                  <div><i class="d-block bi bi-geo-alt text-center"></i>Hybrid</div>
+                  <div><i class="d-block bi bi-briefcase text-center"></i>5+ years</div>
+                </div>
+              </div>
+
+              <div class="row p-4 d-flex justify-content-around">
+                <a href="#" type="button" class="btn btn-dark w-25 rounded-0">View Job</a>
+                <a href="#" type="button" class="btn btn-light w-50 rounded-0">Quick Apply</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-2">
+        <img src="./img/90695.jpg" class="img-fluid h-100 object-fit-cover">
+      </div>
+
+    </div>
+
+    <div class="row mt-4 d-flex justify-content-center">
+      <a href="#" type="button" class="btn btn-dark w-25 rounded-0">Browse all jobs >></a>
+    </div>
+
+  </div>
+
+
+  </main>
+
+  <footer class="mt-5" id="footer">
+
+    <div class="container-fluid bg-dark text-light">
+
+      <div class="row">
+
+        <!-- left side w/ about and links -->
+        <div class="col-4">
+          <div class="row d-flex flex-column">
+            <div class="col-12 mb-3 mt-3"><h4>CareerQuest</h4></div>
+            <div class="col-12 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi sequi asperiores repudiandae praesentium dicta ipsam, quo, quam autem iusto recusandae? Debitis soluta odio aut.</div>
+            <div class="col-12 d-flex gap-4">
+              <p>Follow us</p>
+              <p class="mr-3"><i class="bi bi-instagram"></i></p>
+              <p><i class="bi bi-facebook"></i></p>
+              <p><i class="bi bi-linkedin"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side w/ map, info and subscribe -->
+
+        <div class="col-8 d-flex flex-row align-items-center">
+
+          <div class="d-flex flex-row align-items-center gap-4">
+            <img src="./img/skopje map.png" class="w-50" alt="">
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2"><i class="bi bi-geo-alt"></i>St. 123/45</div>
+              <div class="d-flex gap-2"><i class="bi bi-telephone"></i>+123455667</div>
+              <div class="d-flex gap-2"><i class="bi bi-envelope"></i>career@quest.com</div>
+            </div>
+          </div>
+
+          <div class="w-100">
+            <h6>Subscribe now to get updates on new jobs</h6>
+            <div class="input-group mb-3 w-100">
+              <input type="text" class="form-control rounded-0" placeholder="Enter your Email address" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2">Sign Up</button>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script/script.js"></script>
+
+  
+</body>
+</html>

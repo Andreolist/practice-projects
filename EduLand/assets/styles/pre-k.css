@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+
+/* html body wrapper */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Lato', sans-serif;
+  color: #535353;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --mainColor:#D0A33A;
+  /* --secondaryColor: rgba(223, 223, 223, 0.884); */
+  --secondaryColor: beige;
+  /* --blueColor: #05475a; */
+  --blueColor: #ededed;
+}
+
+/* ===========================================================================*/
+/* navigation start */
+
+#logo {
+  width: 15%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: var(--blueColor);
+  width: 100%;
+  /* font-size: 1.2em; */
+  gap: 20em;
+}
+
+nav li a:hover,
+nav li a:active {
+border-bottom: 2px beige solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding-right: 3rem;
+  text-decoration: none;
+  color: #535353;
+}
+
+.dropdown-content {
+  display:none;
+  position:fixed;
+  text-align: center;
+  background-color: var(--blueColor);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  font-size: inherit;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.4rem;
+  text-decoration: none;
+  display: block;
+
+}
+
+#teachers:hover .dropdown-content {display: block;}
+
+#play-and-learn:hover .dropdown-content {display: block;}
+
+#about-us:hover .dropdown-content {display: block;}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  padding-left: 10px;
+  border-left: 4px solid var(--mainColor);
+  transition: all 0.4s ease;
+}
+
+/* navigation ends */
+/* ===========================================================================*/
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-around;
+  background-color: var(--blueColor);
+}
+
+
+main h1 {
+  font-size: 2rem;
+  border-bottom: 3px var(--mainColor) solid;
+  color: #535353;
+  
+}
+
+main h2 {
+  color: #535353;
+}
+
+
+/* CARDS */
+
+.lesson-cards, .exercise-cards {
+  display: flex;
+  flex-direction: column;
+}
+ 
+#counting-toggle, #inside-toggle, #longer-toggle, #abc-toggle, #rhyme-toggle {
+  display: none;
+}
+
+
+#counting-a, #inside-a, #longer-a, #abc-a, #rhyme-a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 30rem;
+  height: 2rem;
+  box-shadow: 1px 1px 10px 2px #2f3945cd;
+  border:  2px ridge #2f3945cd;
+  border-radius: 35px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+#counting-p, #inside-p, #longer-p, #abc-p, #rhyme-p {
+  display: none;
+  width: 45ch;
+  box-shadow: 1px 10px 20px 8px #1014183e;
+  justify-content: center;
+  padding: 3rem;
+  color: #535353;
+  background-color: white;
+}
+
+
+#counting-toggle:checked ~ #counting-p {
+  display: block;
+  margin-top: 2rem;
+}
+
+#inside-toggle:checked ~ #inside-p {
+  display: block;
+  margin-top: 2rem;
+}
+#longer-toggle:checked ~ #longer-p {
+  display: block;
+  margin-top: 2rem;
+}
+#abc-toggle:checked ~ #abc-p {
+  display: block;
+  margin-top: 2rem;
+}
+
+#rhyme-toggle:checked ~ #rhyme-p {
+  display: block;
+  margin-top: 2rem;
+}
+
+
+#counting-expand, #inside-expand, #longer-expand, #abc-expand, #rhyme-expand {
+  display: inline-block;
+  padding: 3rem;
+  /* transform: rotate(.5turn); */
+}
+
+#expand-img, #inside-expand-img, #longer-expand-img, #abc-expand-img, #rhyme-expand-img {
+  width: 3rem;
+}
+
+#logo {
+  width: 7rem;
+
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  h1 {
+    color: #05475a;
+  }
+  img {
+    width: 10rem;
+  }
+}
+
+/* CARDS END */
+
+/* MAIN END */
+
+/* footer start */
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  background-color: var(--mainColor);
+  padding: 1rem;
+  color: var(--blueColor);
+}
+
+.links, a, b {
+  display: flex;
+  text-decoration: none;
+  gap: 7rem;
+  color: var(--blueColor);
+}
+
+.links ul {
+  list-style-type: none;
+}
+
+.links h3 a {
+  color: var(--blueColor);
+}
+
+#join-us, #join-us h2, #join-us p {
+  display: flex;
+  flex-direction: column;
+  width: 50ch;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /* align-items: center; */
+  font-size: 1em;
+  color: var(--blueColor);
+}
+
+
+.logos{
+  display: flex;
+  flex-direction: row;
+  width: 3.2rem;
+  align-self: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bottom strong {
+  color: var(--blueColor);
+}
+
+.policy {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 470px) {
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    font-size: 1em;
+    gap: 2rem;
+  }
+  
+  nav h3 a {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    padding: 1rem;
+
+  };
+
+  .dropdown-content {
+    text-align: left;
+
+  }
+
+  main {
+    padding: 0.6rem;
+    flex-direction: column;
+    font-size: 60%;
+
+  }
+
+  main h1 {
+    margin-top: 1rem;
+    font-size: 3.5em;
+    text-align: left;
+  }
+
+  #counting-a, #inside-a, #longer-a, #abc-a, #rhyme-a {
+    width: 85%;
+  }
+
+  #counting-p, #inside-p, #longer-p, #abc-p, #rhyme-p {
+    width: 80%;
+    padding: 3rem;
+  }
+
+  .lesson-cards, .exercise-cards {
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 2rem;
+
+  }
+
+  #expand-img, #inside-expand-img, #longer-expand-img, #abc-expand-img, #rhyme-expand-img {
+    width: 2rem;
+  }
+
+  #logo {
+    width: 5rem;
+  }
+
+
+  ::-webkit-scrollbar{
+  display: none; 
+
+  }
+
+  .links, a, b {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #join-us div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  #join-us div p{
+    width: 30ch;
+    align-self: center;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bottom {
+    font-size: 0.8em;
+  }
+}
