@@ -6,6 +6,18 @@ main {
   background-color: #f8f9fa;
 }
 
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.show .nav-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #hero {
   height: 100vh;
   background-image: url(../img/business.jpg);
@@ -16,6 +28,15 @@ main {
 
 #hero-text {
   background-color: rgba(255, 255, 255, 0.315);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#companies img {
+  max-width: 150px;
 }
 
 .card {
@@ -142,4 +163,31 @@ nav a:hover {
 
 .naslov h3 {
   color: white;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 540px) {
+  #hero {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top-center;
+    height: 50vh;
+  }
+  #award h3 {
+    font-size: 1.3rem;
+  }
+  #award h5 {
+    font-size: 1rem;
+  }
+  #award {
+    padding: 2rem;
+  }
+  #scrollspyHeading3 {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
