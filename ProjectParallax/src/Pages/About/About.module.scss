@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+h1 {
+  // text-align: center;
+  padding: 30px;
+  font-size: 3rem;
+  font-family: 'Orbitron';
+}
+
+.wrapper {
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+
+  .moon {
+    position: fixed;
+    left: 500px;
+    width: 100%;
+  }
+
+  .text {
+    position: relative;
+  }
+
+  p {
+    width: 55ch;
+  }
+
+  h3 {
+    font-family: 'Orbitron'
+  }
+
+
+}

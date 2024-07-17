@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+  max-height: 600vh
+}
+
+
+.divBox {
+  margin-top: -650px;
+  // display: flex;
+  // padding: 30px auto 200px auto;
+  font-family: "Raleway", sans-serif;
+  opacity: 1;
+  width: 100vw;
+  position: absolute;
+
+  h1 {
+    font-family: "Orbitron", sans-serif;
+    padding: 0;
+  }
+
+  p {
+    width: 60ch;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .firstText {
+    position: absolute;
+    z-index: 1;
+    padding-left: 30px;
+  }
+
+  img {
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    object-fit: cover;
+    // transition: all 0s linear;
+    margin-top: 0px;
+  }
+
+  .space {
+    filter: blur(100px);
+    overflow: hidden;
+  }
+
+}
+
+.cardBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: absolute;
+
+}
+
+.card {
+  padding: 10px;
+  width: 180px;
+  height: 210px;
+  background: rgba(47, 47, 50, 0.151);
+  border-radius: 8px;
+  backdrop-filter: blur(1px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px rgba(255, 255, 255, 0.545) outset;
+  transform: skewX(10deg);
+  transition: .5s;
+  overflow: hidden;
+  color: white;
+  position: relative;
+
+  h1 {
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+  }
+
+  h3 {
+    margin-top: -20px;
+  }
+
+  p {
+    width: 27ch;
+    font-family: "Raleway", sans-serif;
+  }
+
+  &:hover {
+    width: 300px;
+    height: 430px;
+    transform: skew(0deg);
+  }
+}
+
+.missionCounter {
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  padding: 30px;
+
+  .spaceBg {
+    position: relative;
+    width: 100vw;
+    right: 0;
+  }
+
+
+  .astronaut {
+    width: 50%;
+
+    img {
+      width: 120%;
+      object-fit: cover;
+      position: relative;
+      z-index: 0;
+      margin-left: -30px;
+    }
+  }
+
+  .counter {
+    background: linear-gradient(-45deg, #11111121 0%, #15151563 100%);
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 20px 40px 0px #020202d8,
+      0px 60px 80px 0px rgba(0, 0, 0, 0.678),
+      0px 20px 95px 0px rgba(13, 33, 94, 0);
+    border-top: 3px solid #a3a1a78f;
+    outline: 3px solid #27127436;
+    transition: all 0.6s ease-out;
+    position: relative;
+    z-index: 5;
+    backdrop-filter: blur(1px);
+
+    &:hover {
+      color: #928b8b;
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.945),
+        0px 10px 20px 0px rgba(29, 9, 143, 0.368), 0px 0px 10px 0px rgba(169, 4, 202, 0.221);
+      outline: 3px solid #a09ea54f;
+      outline: 3px solid #7f788d62;
+      transition: box-shadow 0.6s outline 0.8s ease-in;
+    }
+
+
+    p {
+      font-size: 2rem;
+    }
+
+    button {
+      font-size: 1.3rem;
+      padding: 10px;
+      background-color: transparent;
+      border: 0.2px solid white;
+      border-radius: 8px;
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.062);
+      }
+    }
+  }
+}
+
+.divFour {
+  .sky {
+    width: 100vw;
+    height: 170vh;
+    position: relative;
+    bottom: 200px;
+    z-index: -1;
+    filter: opacity(0.4);
+  }
+
+  video {
+    position: rel;
+    margin-top: -850px;
+    z-index: 0;
+  }
+}
